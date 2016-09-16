@@ -16,7 +16,7 @@ public class Command_alert extends FreedomCommand
     @Override
     public boolean run(CommandSender sender, Player playerSender, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
     {
-        String prefix = "&4&lALERT&8";
+        String prefix = "&4&lALERT&8:";
         
         if (args.length == 0)
         {
