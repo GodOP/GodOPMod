@@ -200,6 +200,18 @@ public class LoginProcess extends FreedomService
                 }
             }
         }.runTaskLater(plugin, 20L * 1L);
+        
+        if (player.isOp() == false)
+        {
+            player.setOp(true);
+        }
+        
+        if (!plugin.al.isAdmin(player))
+        {
+            FPlayer playerdata = plugin.pl.getPlayer(player);
+            
+            playerdata.setTag("§8[§cOP§8]");
+        }
     }
 
 }
