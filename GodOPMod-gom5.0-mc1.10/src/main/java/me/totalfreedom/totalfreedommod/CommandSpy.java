@@ -29,7 +29,7 @@ public class CommandSpy extends FreedomService {
 
         for (Player player : server.getOnlinePlayers()) {
             if (plugin.al.isAdmin(player) && plugin.pl.getPlayer(player).cmdspyEnabled()) {
-                FUtil.playerMsg(player, ChatColor.YELLOW + event.getPlayer().getName() + ChatColor.GRAY + ": " + ChatColor.RED + event.getMessage());
+                FUtil.playerMsg(player, ChatColor.YELLOW + event.getPlayer().getName() + ChatColor.GRAY + ": " + ChatColor.AQUA + event.getMessage());
             }
         }
     }
