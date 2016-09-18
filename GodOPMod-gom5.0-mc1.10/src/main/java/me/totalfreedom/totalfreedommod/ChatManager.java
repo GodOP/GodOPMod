@@ -109,7 +109,7 @@ public class ChatManager extends FreedomService
         {
             if (plugin.al.isAdmin(player))
             {
-                player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Admin Chat" + ChatColor.DARK_GRAY + "] " + ChatColor.BLUE + name + ": " + ChatColor.translateAlternateColorCodes('&', message));
+                player.sendMessage("[" + ChatColor.AQUA + "ADMIN" + ChatColor.WHITE + "] " + ChatColor.DARK_RED + name + ": " + ChatColor.translateAlternateColorCodes('&',&b message));
             }
         }
     }
@@ -120,7 +120,7 @@ public class ChatManager extends FreedomService
         {
             if (plugin.al.isAdmin(player))
             {
-                playerMsg(player, ChatColor.DARK_AQUA + "[Report Alert] " + ChatColor.GOLD + reporter.getName() + " has reported " + reported.getName() + " for " + report);
+                playerMsg(player, ChatColor.DARK_AQUA + "[Report Alert] " + ChatColor.DARK_AQUA + reporter.getName() + " has reported " + reported.getName() + " for " + report);
             }
         }
     }
